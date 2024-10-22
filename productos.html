@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?
+    familiy=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <title>Verve Coffee</title>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo"><i class='bx bxs-home'></i>Verve</a>
+            <ul class="navlist">
+                <li><a href="cuenta.html"class="active">Cuenta</a></li>
+                <li><a href="index.html">Nosotros</a></li>
+                <li><a href="index.html">Tienda</a></li>
+                <li><a href="carrito.html">Carrito</a></li>
+                <li><a href="index.html">Contacto</a></li>
+            </ul>
+            <div class="nav-icons">
+                <a href="#"><i class='bx bx-search'></i></a>
+                <a href="carrito.html"><i class='bx bx-cart'></i></a>
+                <div class="bx bx-menu" id="menu-icon"></div>
+            </div>
+    </header>
+
+        <div class="shop-content">
+            <div class="row" id="bebida1">
+                <img src="img/frappe.jpeg">
+                <h3>Frappe Mocha</h3>
+                <p>Café seleccionado para refrescarte</p>
+                <div class="in-text">
+                    <div class="price" id="precio">
+                        <h6>$70.00</h6>
+                    </div>
+                    <div class="s-btnn">
+                        <a href="carrito.html" onclick="agregarAlCarrito('Frappe Mocha', '$70.00')">Ordena Ahora</a>
+                    </div>
+                </div>
+                <div class="top-icon"> 
+                    <a href="#"><i class='bx bx-heart'></i></a>
+                </div>
+            </div>
+        
+            <!-- Repite este bloque de código para cada producto -->
+        
+        </div>
+        
+    
+        <div class="row" id="comida1">
+            <img src="img/hamb.jpeg">
+            <h3>Hamburguesa</h3>
+            <p>Hamburguesa de Sirloin</p>
+            <div class="in-text">
+                <div class="price" id="precio2">
+                    <h6>$102.00</h6>
+                </div>
+                <div class="s-btnn">
+                    <a href="carrito.html" onclick="agregarAlCarrito('Hamburguesa Sirloin', '$102.00')">Ordena Ahora</a>
+                </div>
+            </div>
+            <div class="top-icon"> 
+                <a href="#"><i class='bx bx-heart'></i></a>
+            </div>
+        </div>
+    
+        <div class="row" id="bebida2">
+            <img src="img/espresso.jpeg">
+            <h3>Espresso</h3>
+            <p>Para los amantes del café puro</p>
+            <div class="in-text">
+                <div class="price" id="precio3">
+                    <h6>$62.00</h6>
+                </div>
+                <div class="s-btnn">
+                    <a href="carrito.html" onclick="agregarAlCarrito('Espresso', '$62.00')">Ordena Ahora</a>
+                </div>
+            </div>
+            <div class="top-icon"> 
+                <a href="#"><i class='bx bx-heart'></i></a>
+            </div>
+        </div>
+    
+        <!-- Nuevas imágenes -->
+        <div class="row" id="comida2">
+            <img src="img/chila.jpeg">
+            <h3>Chilaquiles Rojos</h3>
+            <p>Bañados en nuestra salsa especial</p>
+            <div class="in-text">
+                <div class="price" id="precio4">
+                    <h6>$100.00</h6>
+                </div>
+                <div class="s-btnn">
+                    <a href="carrito.html" onclick="agregarAlCarrito('Chilaquiles', '$70.00')">Ordena Ahora</a>
+                </div>
+            </div>
+            <div class="top-icon"> 
+                <a href="#"><i class='bx bx-heart'></i></a>
+            </div>
+        </div>
+    
+        <div class="row" id="bebida3">
+            <img src="img/fresa.jpeg">
+            <h3>Refresher fresa</h3>
+            <p>Una opción ligera y deliciosa</p>
+            <div class="in-text">
+                <div class="price" id="precio5">
+                    <h6>$85.00</h6>
+                </div>
+                <div class="s-btnn">
+                    <a href="carrito.html" onclick="agregarAlCarrito('Refresher', '$85.00')">Ordena Ahora</a>
+                </div>
+            </div>
+            <div class="top-icon"> 
+                <a href="#"><i class='bx bx-heart'></i></a>
+            </div>
+        </div>
+    
+        <div class="row" id="comida3">
+            <img src="img/serrano.jpeg">
+            <h3>Baguette Jamon Serrano</h3>
+            <p>Para los amantes del jamon</p>
+            <div class="in-text">
+                <div class="price" id="precio6">
+                    <h6>$150.00</h6>
+                </div>
+                <div class="s-btnn">
+                    <a href="carrito.html" onclick="agregarAlCarrito('Baguette', '$150.00')">Ordena Ahora</a>
+                </div>
+            </div>
+            <div class="top-icon"> 
+                <a href="#"><i class='bx bx-heart'></i></a>
+            </div>
+        </div>
+    
+        <div class="row" id="bebida4">
+            <img src="img/limon.jpeg">
+            <h3>Limonada</h3>
+            <p>Refrescate</p>
+            <div class="in-text">
+                <div class="price" id="precio7">
+                    <h6>$60.00</h6>
+                </div>
+                <div class="s-btnn">
+                    <a href="carrito.html" onclick="agregarAlCarrito('Limonada', '$60.00')">Ordena Ahora</a>
+                </div>
+            </div>
+            <div class="top-icon"> 
+                <a href="#"><i class='bx bx-heart'></i></a>
+            </div>
+        </div>
+
+        <div class="row" id="comida4">
+            <img src="img/pan.jpeg">
+            <h3>Croasant</h3>
+            <p>Recien Horneado</p>
+            <div class="in-text">
+                <div class="price" id="precio8">
+                    <h6>$60.00</h6>
+                </div>
+                <div class="s-btnn">
+                    <a href="carrito.html" onclick="agregarAlCarrito('Croasant', '$60.00')">Ordena Ahora</a>
+                </div>
+            </div>
+            <div class="top-icon"> 
+                <a href="#"><i class='bx bx-heart'></i></a>
+            </div>
+        </div>
+
+        <div class="row" id="comida5">
+            <img src="img/pizza.jpeg">
+            <h3>Rebanada Pepperoni</h3>
+            <p>Masa italiana e ingredientes frescos</p>
+            <div class="in-text">
+                <div class="price" id="precio9">
+                    <h6>$75.00</h6>
+                </div>
+                <div class="s-btnn">
+                    <a href="carrito.html" onclick="agregarAlCarrito('Pizza', '$75.00')">Ordena Ahora</a>
+                </div>
+            </div>
+            <div class="top-icon"> 
+                <a href="#"><i class='bx bx-heart'></i></a>
+            </div>
+        </div>
+
+        <div class="row" id="bebida5">
+            <img src="img/capu.jpeg">
+            <h3>Capuchino</h3>
+            <p>Cafe tostado y espuma cremosa</p>
+            <div class="in-text">
+                <div class="price" id="precio10">
+                    <h6>$68.00</h6>
+                </div>
+                <div class="s-btnn">
+                    <a href="carrito.html" onclick="agregarAlCarrito('Capuchino', '$68.00')">Ordena Ahora</a>
+                </div>
+            </div>
+            <div class="top-icon"> 
+                <a href="#"><i class='bx bx-heart'></i></a>
+            </div>
+        </div>
+    </div>
+
+<script>
+    function agregarAlCarrito(nombre, precio) {
+    // Obtener el carrito de localStorage
+    let carrito = JSON.parse(localStorage.getItem('carrito')) || [];
+    
+    // Agregar el nuevo producto al carrito
+    carrito.push({ nombre: nombre, precio: precio });
+
+    // Guardar el carrito actualizado en localStorage
+    localStorage.setItem('carrito', JSON.stringify(carrito));
+
+    alert("Producto agregado al carrito.");
+}
+</script>
+   
+</script>
+    
+</body>
+</html>

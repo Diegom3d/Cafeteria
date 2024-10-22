@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  type="text/css" href="stylecuenta.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <title>Verve Coffee</title>
+</head>
+<header>
+    <body>
+        
+        <div class="box">
+            <div class="container">
+                <div class="top">
+                  <span>¿Tienes una cuenta?</span>
+                  <header>Iniciar Sesion</header>
+               </div> 
+            
+    <div class="input-box">
+        <input type="text" class="input" placeholder="Nombre de Usuario" id="NombreUsuario">
+        <i class="bx bx-user"></i>
+    </div>
+    
+    <div class="input-box">
+        <input type="password" class="input" placeholder="Contraseña" id="Contraseña">
+        <i class="bx bx-lock-alt"></i>
+        
+    </div> 
+    
+    <div class="input-box">
+        <input type="submit" class="submit" value="Login" onclick="redirectToHome()">
+        
+    </div> 
+    
+    
+
+    <div class="input-box">
+        <input type="submit" class="submit" value="Sign Up" onclick="redirectToAccount()" >
+        
+    </div> 
+    
+    
+             </div>
+        </div>
+       <script>
+            
+            function redirectToHome() {
+                window.location.href = "index.html";
+            }
+            function redirectToAccount() {
+                window.location.href = "registro.html";
+            }
+    
+            
+    
+       </script>
+    
+    </body>
+    </html>

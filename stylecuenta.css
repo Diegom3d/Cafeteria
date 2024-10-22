@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200&display=swap');
+*{
+    font-family: 'poppins' ,sans-serif;
+}
+
+
+body{
+background-color: #fff;;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.nombre {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin: auto;
+    color: #ececec;
+}
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Centra verticalmente los elementos */
+    height: 100vh; /* Ajusta la altura del contenedor */
+}
+
+.container {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    padding: 0 15px 0 15px;
+}
+
+span{
+    color: #000000;
+    font-size: small;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0 10px 0;
+}
+header{
+    color: #ff8800;
+    font-size: small;
+}
+.input-box {
+    margin-bottom: 15px; /* Añade un margen inferior a todos los input-box */
+    position: relative;
+    color: #000000;
+}
+
+.input-box .input {
+    height: 60px;
+    width: 87%;
+    border: none;
+    border-radius: 30px;
+    color: #000000;
+    font-size: 15px;
+    padding: 0 0 0 45px;
+    background: rgb(231, 213, 174);
+    outline: none;
+}
+
+.submit {
+    margin-bottom: 15px; /* Ajusta el margen inferior del botón */
+    border: none;
+    border-radius: 45px;
+    font-size: 15px;
+    height: 45px;
+    outline: none;
+    width: 100%;
+    color: #ffffff;
+    background: rgb(255, 153, 0);
+    cursor: pointer;
+    transition: .3s;
+}
+
+.submit:hover {
+    box-shadow: rgba(255, 124, 2, 0.2);
+}
+
+
+::-webkit-input-placeholder{
+    color: #000000;
+}
+
+.one{
+    display: flex;
+}
+label a{
+    text-decoration: none;
+    color: #fff;
+}

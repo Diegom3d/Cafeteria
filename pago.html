@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?
+    familiy=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <title>Verve Coffe</title>
+</head>
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+body {
+    background-color: rgb(250, 244, 237);
+    color: rgb(0, 0, 0);
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding-left: 1%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+form {
+    background-color: rgb(226, 206, 175);
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+}
+
+h2 {
+    text-align: center; /* Centra el título */
+}
+
+label {
+    color: rgba(0, 0, 0, 0.8); /* Hace los labels semi-transparentes */
+}
+
+input, button {
+    margin-bottom: 10px;
+    width: 100%;
+    background-color: rgb(214, 184, 164); /* Estilo transparente para inputs */
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    color: white;
+    outline: none;
+}
+
+button {
+    background-color: orange;
+    color: white;
+    font-size: 16px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+button:hover {
+    background-color: darkorange;
+}
+
+
+</style>
+<body>
+    <h2>Formulario de <br>Pago</h2>
+
+<form action="/procesar_pago" method="post">
+  <div>
+    <label for="nombre">Nombre en la Tarjeta:</label>
+    <input type="text" id="nombre" name="nombre" required>
+  </div>
+  <div>
+    <label for="numero_tarjeta">Número de Tarjeta:</label>
+    <input type="text" id="numero_tarjeta" name="numero_tarjeta" required pattern="[0-9]{13,16}">
+    <small>Debe contener entre 13 y 16 dígitos.</small>
+  </div>
+  <div>
+    <label for="cvv">CVV:</label>
+    <input type="text" id="cvv" name="cvv" required pattern="[0-9]{3,4}">
+    <small>Debe contener 3 o 4 dígitos.</small>
+  </div>
+  <button type="submit" id="Pago">Pagar</button>
+  <button type="submit" onclick=MenuPrincipal() >Ir a página principal</button>
+  </form>
+    
+   
+   
+   <script>
+        function comprarCarrito(){
+            // Almacenar el carrito en localStorage antes de redirigir
+            localStorage.setItem('carrito', JSON.stringify(carrito));
+            window.location.href = "pago.html";
+        }
+        function MenuPrincipal(){
+            window.location.href="index.html"
+        }
+    </script>
+    
+</body>
+</html>
